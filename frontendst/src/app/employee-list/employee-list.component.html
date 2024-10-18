@@ -1,0 +1,23 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+   <h1>students List</h1>
+</nav>
+
+<table class="table table-striped,container" >
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Fees</th>
+        </tr>
+    </thead>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.fees }}</td>
+      </tr>
+    
+    </table>
+
